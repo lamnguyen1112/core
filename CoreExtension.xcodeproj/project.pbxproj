@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E09D69FE2904EB2C00A18473 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E09D69FD2904EB2C00A18473 /* .swiftlint.yml */; };
+		E09D6A012905206E00A18473 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09D6A002905206E00A18473 /* Localizable.strings */; };
+		E09D6A032905308E00A18473 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = E09D6A022905308E00A18473 /* Makefile */; };
+		E09D6A05290533D400A18473 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E09D6A04290533D400A18473 /* swiftgen.yml */; };
+		E09D6A0A2905827D00A18473 /* custom-strings.stencil in Resources */ = {isa = PBXBuildFile; fileRef = E09D6A072905827D00A18473 /* custom-strings.stencil */; };
+		E09D6A0B2905827D00A18473 /* custom-config.stencil in Resources */ = {isa = PBXBuildFile; fileRef = E09D6A082905827D00A18473 /* custom-config.stencil */; };
+		E09D6A0C2905827D00A18473 /* cusom-config-color.stencil in Resources */ = {isa = PBXBuildFile; fileRef = E09D6A092905827D00A18473 /* cusom-config-color.stencil */; };
 		E0F379DF2902133700240A50 /* CoreExtension.docc in Sources */ = {isa = PBXBuildFile; fileRef = E0F379DE2902133700240A50 /* CoreExtension.docc */; };
 		E0F379E52902133700240A50 /* CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; };
 		E0F379EA2902133700240A50 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F379E92902133700240A50 /* CoreExtensionTests.swift */; };
@@ -32,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E09D69FD2904EB2C00A18473 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E09D6A002905206E00A18473 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E09D6A022905308E00A18473 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E09D6A04290533D400A18473 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		E09D6A072905827D00A18473 /* custom-strings.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom-strings.stencil"; sourceTree = "<group>"; };
+		E09D6A082905827D00A18473 /* custom-config.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom-config.stencil"; sourceTree = "<group>"; };
+		E09D6A092905827D00A18473 /* cusom-config-color.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cusom-config-color.stencil"; sourceTree = "<group>"; };
 		E0F379DA2902133700240A50 /* CoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F379DD2902133700240A50 /* CoreExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreExtension.h; sourceTree = "<group>"; };
 		E0F379DE2902133700240A50 /* CoreExtension.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CoreExtension.docc; sourceTree = "<group>"; };
@@ -76,9 +90,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E09D69FA2904E8EF00A18473 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E09D6A04290533D400A18473 /* swiftgen.yml */,
+				E09D69FD2904EB2C00A18473 /* .swiftlint.yml */,
+				E09D6A022905308E00A18473 /* Makefile */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		E09D6A062905827D00A18473 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				E09D6A072905827D00A18473 /* custom-strings.stencil */,
+				E09D6A082905827D00A18473 /* custom-config.stencil */,
+				E09D6A092905827D00A18473 /* cusom-config-color.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
 		E0F379D02902133600240A50 = {
 			isa = PBXGroup;
 			children = (
+				E09D6A062905827D00A18473 /* Templates */,
+				E09D69FA2904E8EF00A18473 /* Config */,
 				E0F379F62902165900240A50 /* README.md */,
 				E0F379FC29021D5000240A50 /* Example */,
 				E0F379DC2902133700240A50 /* CoreExtension */,
@@ -128,6 +164,7 @@
 		E0F379F52902137000240A50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E09D6A002905206E00A18473 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +202,7 @@
 			buildConfigurationList = E0F379EE2902133700240A50 /* Build configuration list for PBXNativeTarget "CoreExtension" */;
 			buildPhases = (
 				E0F379D52902133600240A50 /* Headers */,
+				E09D69FF2905118600A18473 /* Swiftlint */,
 				E0F379D62902133600240A50 /* Sources */,
 				E0F379D72902133600240A50 /* Frameworks */,
 				E0F379D82902133600240A50 /* Resources */,
@@ -259,7 +297,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09D6A0A2905827D00A18473 /* custom-strings.stencil in Resources */,
+				E09D69FE2904EB2C00A18473 /* .swiftlint.yml in Resources */,
+				E09D6A012905206E00A18473 /* Localizable.strings in Resources */,
 				E0F37A1229021FA400240A50 /* CoreExtension.podspec in Resources */,
+				E09D6A05290533D400A18473 /* swiftgen.yml in Resources */,
+				E09D6A0B2905827D00A18473 /* custom-config.stencil in Resources */,
+				E09D6A0C2905827D00A18473 /* cusom-config-color.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +326,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E09D69FF2905118600A18473 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0F379D62902133600240A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09D6A032905308E00A18473 /* Makefile in Sources */,
 				E0F37A1029021E2C00240A50 /* Calculate.swift in Sources */,
 				E0F379DF2902133700240A50 /* CoreExtension.docc in Sources */,
 			);
