@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var cal = Calculate()
+        let cal = Calculate()
         let result = cal.add(a: 2, b: 3)
         print(result)
     }

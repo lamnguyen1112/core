@@ -106,7 +106,7 @@ public extension UIView {
 @IBDesignable
 public extension UIView {
     @IBInspectable
-    open var cornerRadius: CGFloat {
+    var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
         set {
             layer.cornerRadius = newValue
@@ -116,7 +116,7 @@ public extension UIView {
     }
 
     @IBInspectable
-    open var borderWidth: CGFloat {
+    var borderWidth: CGFloat {
         get { return layer.borderWidth }
         set {
             layer.borderWidth = newValue
@@ -126,7 +126,7 @@ public extension UIView {
     }
 
     @IBInspectable
-    open var borderColor: UIColor? {
+    var borderColor: UIColor? {
         get { return layer.borderColor == nil ? nil : UIColor(cgColor: layer.borderColor!) }
         set {
             layer.borderColor = newValue?.cgColor
@@ -135,7 +135,7 @@ public extension UIView {
         }
     }
 
-    @objc public func setCornerRadius(_ radius: CGFloat, width: CGFloat = 0, color: UIColor? = nil) {
+    @objc func setCornerRadius(_ radius: CGFloat, width: CGFloat = 0, color: UIColor? = nil) {
         layer.cornerRadius = radius
         layer.borderWidth = width
         layer.borderColor = color?.cgColor
