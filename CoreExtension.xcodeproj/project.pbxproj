@@ -167,9 +167,9 @@
 		E0CCAE6229367C4500DD3D99 /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
+				E0F37A1129021FA400240A50 /* CoreExtension.podspec */,
 				E0F379F62902165900240A50 /* README.md */,
 				E0CCAE6329367CD000DD3D99 /* LICENSE */,
-				E0F37A1129021FA400240A50 /* CoreExtension.podspec */,
 				E0CCAE9129367F8700DD3D99 /* .bartycrouch.toml */,
 				E0CCAE8F29367F8700DD3D99 /* .gitignore */,
 				E0CCAE9229367F8700DD3D99 /* .swiftlint.yml */,

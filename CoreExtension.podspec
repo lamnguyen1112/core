@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
 
   spec.source        = { :git => "https://github.com/lamnguyen1112/core.git", :tag => "#{spec.version}" }
-  spec.source_files  = "CoreExtension/**/*.{h,m,swift}"
+  spec.source_files  = "Sources/**/*.{swift}"
   
-  # spec.resources = "CoreExtension/Resources/*.png"
+  # spec.resources = "Resources/**/*.*"
 
 end
