@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CoreExtension"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Core Extension"
 
   spec.description  = <<-DESC
