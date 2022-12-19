@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2EBF7F881A577AD11745353A /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29817E14CAD67DE24325811E /* Pods_Example.framework */; };
 		C31458D6BA3CCA43BFB245B4 /* Pods_CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */; };
+		E09CF1C62950B8A500E84F44 /* Dispatch+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */; };
 		E0CCAE6429367CD000DD3D99 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE6329367CD000DD3D99 /* LICENSE */; };
 		E0CCAE6829367D6000DD3D99 /* CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; };
 		E0CCAE6929367D6000DD3D99 /* CoreExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -83,6 +84,7 @@
 		987B627301BB68ABFC1669D0 /* Pods-CoreExtension-CoreExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04908266E60FBDEC1724E1 /* Pods_CoreExtension_CoreExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension_CoreExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Ex.swift"; sourceTree = "<group>"; };
 		E0CCAE6329367CD000DD3D99 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E0CCAE6E29367E8300DD3D99 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		E0CCAE6F29367E8300DD3D99 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E09CF1C42950B86E00E84F44 /* Ultility */ = {
+			isa = PBXGroup;
+			children = (
+				E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */,
+			);
+			path = Ultility;
+			sourceTree = "<group>";
+		};
 		E0CCAE6229367C4500DD3D99 /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +191,7 @@
 		E0CCAE6529367D1900DD3D99 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E09CF1C42950B86E00E84F44 /* Ultility */,
 				E0CCAE7829367E8300DD3D99 /* Foundation */,
 				E0CCAE6D29367E8300DD3D99 /* UIKit */,
 				E0F37A0F29021E2C00240A50 /* Calculate.swift */,
@@ -515,6 +526,7 @@
 				E0CCAE8429367E8300DD3D99 /* UIViewController+Extension.swift in Sources */,
 				E0F37A1029021E2C00240A50 /* Calculate.swift in Sources */,
 				E0CCAE8529367E8300DD3D99 /* UIStoryBoard+Extension.swift in Sources */,
+				E09CF1C62950B8A500E84F44 /* Dispatch+Ex.swift in Sources */,
 				E0CCAE8229367E8300DD3D99 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
