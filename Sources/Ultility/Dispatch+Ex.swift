@@ -12,3 +12,11 @@ public func runInMain(execute work: @escaping @convention(block) () -> Swift.Voi
         work()
     }
 }
+
+func delay(seconds: Double, execute work: @escaping @convention(block) () -> Swift.Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+        DispatchQueue.main.async {
+            work()
+        }
+    }
+}
