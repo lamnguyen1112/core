@@ -13,7 +13,7 @@ public func runInMain(execute work: @escaping @convention(block) () -> Swift.Voi
     }
 }
 
-func delay(seconds: Double, execute work: @escaping @convention(block) () -> Swift.Void) {
+public func delay(seconds: Double, execute work: @escaping @convention(block) () -> Swift.Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
         DispatchQueue.main.async {
             work()

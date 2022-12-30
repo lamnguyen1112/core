@@ -92,4 +92,28 @@ public extension UIViewController {
         return UINavigationController(rootViewController: self)
     }
 }
+
+public extension UIViewController {
+    func removePreviousViewController(with type: AnyClass) {
+        guard let navigationController = self.navigationController
+        else {
+            return
+        }
+        
+        var viewControllers = navigationController.viewControllers
+        let numberViewController = viewControllers.count
+        guard numberViewController >= 2 else {
+            return
+        }
+        
+        let previousIndex = numberViewController - 2
+        let previousViewController = viewControllers[previousIndex]
+        if previousViewController.isKind(of: type) {
+            viewControllers.remove(at: previousIndex)
+            navigationController.viewControllers = viewControllers
+        } else {
+            return
+        }
+    }
+}
 #endif
