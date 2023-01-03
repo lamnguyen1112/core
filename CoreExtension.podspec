@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CoreExtension"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Core Extension"
 
   spec.description  = <<-DESC
@@ -27,5 +27,10 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Sources/**/*.{swift}"
   
   # spec.resources = "Resources/**/*.*"
+  
+  spec.dependency 'RxSwift', '6.5.0'
+  spec.dependency 'RxCocoa', '6.5.0'
+  spec.dependency 'Action'
+  spec.dependency 'RxSwiftExt'
 
 end

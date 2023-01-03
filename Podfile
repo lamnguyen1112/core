@@ -6,6 +6,11 @@ target 'CoreExtension' do
   use_frameworks!
 
   # Pods for CoreExtension
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'RxSwiftExt'
+  pod 'Action'
+  pod 'AttributedStringBuilder'
 
   target 'CoreExtensionTests' do
     # Pods for testing

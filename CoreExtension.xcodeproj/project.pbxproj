@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		2EBF7F881A577AD11745353A /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29817E14CAD67DE24325811E /* Pods_Example.framework */; };
 		C31458D6BA3CCA43BFB245B4 /* Pods_CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */; };
+		E04A11D329647E55002534A7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E04A11D229647E55002534A7 /* Podfile */; };
+		E04A11D729648033002534A7 /* SharedSequence+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A11D529648033002534A7 /* SharedSequence+Ex.swift */; };
+		E04A11D829648033002534A7 /* Observable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A11D629648033002534A7 /* Observable+Ex.swift */; };
 		E09CF1C62950B8A500E84F44 /* Dispatch+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */; };
-		E0CCAE6429367CD000DD3D99 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE6329367CD000DD3D99 /* LICENSE */; };
+		E09F235A29634326002ECF4A /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F235929634326002ECF4A /* With.swift */; };
 		E0CCAE6829367D6000DD3D99 /* CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; };
 		E0CCAE6929367D6000DD3D99 /* CoreExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0CCAE7F29367E8300DD3D99 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAE6E29367E8300DD3D99 /* UIApplication+Extension.swift */; };
@@ -29,10 +32,6 @@
 		E0CCAE8C29367E8300DD3D99 /* Numberic+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAE7C29367E8300DD3D99 /* Numberic+Extension.swift */; };
 		E0CCAE8D29367E8300DD3D99 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAE7D29367E8300DD3D99 /* String+Extension.swift */; };
 		E0CCAE8E29367E8300DD3D99 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAE7E29367E8300DD3D99 /* Data+Extension.swift */; };
-		E0CCAE9329367F8700DD3D99 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE8F29367F8700DD3D99 /* .gitignore */; };
-		E0CCAE9429367F8700DD3D99 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE9029367F8700DD3D99 /* swiftgen.yml */; };
-		E0CCAE9529367F8700DD3D99 /* .bartycrouch.toml in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE9129367F8700DD3D99 /* .bartycrouch.toml */; };
-		E0CCAE9629367F8700DD3D99 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E0CCAE9229367F8700DD3D99 /* .swiftlint.yml */; };
 		E0F379E52902133700240A50 /* CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F379DA2902133700240A50 /* CoreExtension.framework */; };
 		E0F379EA2902133700240A50 /* CoreExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F379E92902133700240A50 /* CoreExtensionTests.swift */; };
 		E0F379FE29021D5000240A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F379FD29021D5000240A50 /* AppDelegate.swift */; };
@@ -84,8 +83,11 @@
 		987B627301BB68ABFC1669D0 /* Pods-CoreExtension-CoreExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04908266E60FBDEC1724E1 /* Pods_CoreExtension_CoreExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension_CoreExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04A11D229647E55002534A7 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
+		E04A11D529648033002534A7 /* SharedSequence+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Ex.swift"; sourceTree = "<group>"; };
+		E04A11D629648033002534A7 /* Observable+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ex.swift"; sourceTree = "<group>"; };
 		E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Ex.swift"; sourceTree = "<group>"; };
-		E0CCAE6329367CD000DD3D99 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E09F235929634326002ECF4A /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
 		E0CCAE6E29367E8300DD3D99 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		E0CCAE6F29367E8300DD3D99 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		E0CCAE7029367E8300DD3D99 /* UINavigation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extension.swift"; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 		E0F379DA2902133700240A50 /* CoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F379E42902133700240A50 /* CoreExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F379E92902133700240A50 /* CoreExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExtensionTests.swift; sourceTree = "<group>"; };
-		E0F379F62902165900240A50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E0F379FB29021D5000240A50 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F379FD29021D5000240A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F37A0129021D5000240A50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 		E0F37A0929021D5100240A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0F37A0B29021D5100240A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F37A0F29021E2C00240A50 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
-		E0F37A1129021FA400240A50 /* CoreExtension.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoreExtension.podspec; sourceTree = SOURCE_ROOT; };
+		E0F37A1129021FA400240A50 /* CoreExtension.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoreExtension.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA24D77E1A85A6912CDD9DB7 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB332BD2C54AC9EF0DF60C2A /* Pods-CoreExtension-CoreExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreExtension-CoreExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,10 +167,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E04A11D429647FD4002534A7 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E04A11D629648033002534A7 /* Observable+Ex.swift */,
+				E04A11D529648033002534A7 /* SharedSequence+Ex.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		E09CF1C42950B86E00E84F44 /* Ultility */ = {
 			isa = PBXGroup;
 			children = (
 				E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */,
+				E09F235929634326002ECF4A /* With.swift */,
 			);
 			path = Ultility;
 			sourceTree = "<group>";
@@ -178,12 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				E0F37A1129021FA400240A50 /* CoreExtension.podspec */,
-				E0F379F62902165900240A50 /* README.md */,
-				E0CCAE6329367CD000DD3D99 /* LICENSE */,
 				E0CCAE9129367F8700DD3D99 /* .bartycrouch.toml */,
 				E0CCAE8F29367F8700DD3D99 /* .gitignore */,
 				E0CCAE9229367F8700DD3D99 /* .swiftlint.yml */,
 				E0CCAE9029367F8700DD3D99 /* swiftgen.yml */,
+				E04A11D229647E55002534A7 /* Podfile */,
 			);
 			name = Deployment;
 			sourceTree = "<group>";
@@ -191,6 +201,7 @@
 		E0CCAE6529367D1900DD3D99 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E04A11D429647FD4002534A7 /* RxSwift */,
 				E09CF1C42950B86E00E84F44 /* Ultility */,
 				E0CCAE7829367E8300DD3D99 /* Foundation */,
 				E0CCAE6D29367E8300DD3D99 /* UIKit */,
@@ -331,6 +342,7 @@
 				E0F379E02902133700240A50 /* Sources */,
 				E0F379E12902133700240A50 /* Frameworks */,
 				E0F379E22902133700240A50 /* Resources */,
+				8B57EC16B7D6C70B616295F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +363,7 @@
 				E0F379F829021D5000240A50 /* Frameworks */,
 				E0F379F929021D5000240A50 /* Resources */,
 				E0CCAE6C29367D6000DD3D99 /* Embed Frameworks */,
+				DDC6FF383EBDBB7F3CA4E4CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,12 +421,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0CCAE9629367F8700DD3D99 /* .swiftlint.yml in Resources */,
-				E0CCAE6429367CD000DD3D99 /* LICENSE in Resources */,
-				E0CCAE9329367F8700DD3D99 /* .gitignore in Resources */,
 				E0F37A1229021FA400240A50 /* CoreExtension.podspec in Resources */,
-				E0CCAE9429367F8700DD3D99 /* swiftgen.yml in Resources */,
-				E0CCAE9529367F8700DD3D99 /* .bartycrouch.toml in Resources */,
+				E04A11D329647E55002534A7 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +466,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B57EC16B7D6C70B616295F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC53F62DEA7C5FADC6EF5BC9 /* [CP] Check Pods Manifest.lock */ = {
@@ -503,6 +529,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DDC6FF383EBDBB7F3CA4E4CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -513,16 +556,19 @@
 				E0CCAE8D29367E8300DD3D99 /* String+Extension.swift in Sources */,
 				E0CCAE8E29367E8300DD3D99 /* Data+Extension.swift in Sources */,
 				E0CCAE8829367E8300DD3D99 /* UITableView+Extension.swift in Sources */,
+				E09F235A29634326002ECF4A /* With.swift in Sources */,
 				E0CCAE8B29367E8300DD3D99 /* DispatchQueue+Extension.swift in Sources */,
 				E0CCAE8629367E8300DD3D99 /* UICollectionView+Extension.swift in Sources */,
 				E0CCAE8329367E8300DD3D99 /* UIView+Extension.swift in Sources */,
 				E0CCAE8C29367E8300DD3D99 /* Numberic+Extension.swift in Sources */,
+				E04A11D829648033002534A7 /* Observable+Ex.swift in Sources */,
 				E0CCAE7F29367E8300DD3D99 /* UIApplication+Extension.swift in Sources */,
 				E0CCAE8129367E8300DD3D99 /* UINavigation+Extension.swift in Sources */,
 				E0CCAE8929367E8300DD3D99 /* Date+Extension.swift in Sources */,
 				E0CCAE8729367E8300DD3D99 /* CGFloat+Extension.swift in Sources */,
 				E0CCAE8029367E8300DD3D99 /* UIDevice+Extension.swift in Sources */,
 				E0CCAE8A29367E8300DD3D99 /* Collection+Extension.swift in Sources */,
+				E04A11D729648033002534A7 /* SharedSequence+Ex.swift in Sources */,
 				E0CCAE8429367E8300DD3D99 /* UIViewController+Extension.swift in Sources */,
 				E0F37A1029021E2C00240A50 /* Calculate.swift in Sources */,
 				E0CCAE8529367E8300DD3D99 /* UIStoryBoard+Extension.swift in Sources */,
@@ -713,7 +759,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NDD3U2V39;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 0.0.2;
+				DYLIB_CURRENT_VERSION = 0.0.3;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -724,7 +770,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.lazyman.CoreExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -744,7 +790,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NDD3U2V39;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 0.0.2;
+				DYLIB_CURRENT_VERSION = 0.0.3;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -755,7 +801,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.lazyman.CoreExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
