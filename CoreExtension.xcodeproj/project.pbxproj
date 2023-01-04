@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		2EBF7F881A577AD11745353A /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29817E14CAD67DE24325811E /* Pods_Example.framework */; };
 		C31458D6BA3CCA43BFB245B4 /* Pods_CoreExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */; };
+		E048B5602965E55A00F257FC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048B55F2965E55A00F257FC /* ActivityIndicator.swift */; };
+		E048B5622965E57F00F257FC /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E048B5612965E57F00F257FC /* ErrorTracker.swift */; };
 		E04A11D329647E55002534A7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E04A11D229647E55002534A7 /* Podfile */; };
-		E04A11D729648033002534A7 /* SharedSequence+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A11D529648033002534A7 /* SharedSequence+Ex.swift */; };
 		E04A11D829648033002534A7 /* Observable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A11D629648033002534A7 /* Observable+Ex.swift */; };
 		E09CF1C62950B8A500E84F44 /* Dispatch+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */; };
 		E09F235A29634326002ECF4A /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F235929634326002ECF4A /* With.swift */; };
@@ -83,8 +84,9 @@
 		987B627301BB68ABFC1669D0 /* Pods-CoreExtension-CoreExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreExtension-CoreExtensionTests/Pods-CoreExtension-CoreExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B84F06BCD232889B13AB5F71 /* Pods_CoreExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04908266E60FBDEC1724E1 /* Pods_CoreExtension_CoreExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreExtension_CoreExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E04A11D229647E55002534A7 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
-		E04A11D529648033002534A7 /* SharedSequence+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Ex.swift"; sourceTree = "<group>"; };
+		E048B55F2965E55A00F257FC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E048B5612965E57F00F257FC /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		E04A11D229647E55002534A7 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E04A11D629648033002534A7 /* Observable+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ex.swift"; sourceTree = "<group>"; };
 		E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Ex.swift"; sourceTree = "<group>"; };
 		E09F235929634326002ECF4A /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
@@ -171,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				E04A11D629648033002534A7 /* Observable+Ex.swift */,
-				E04A11D529648033002534A7 /* SharedSequence+Ex.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -180,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				E09CF1C52950B8A500E84F44 /* Dispatch+Ex.swift */,
+				E048B55F2965E55A00F257FC /* ActivityIndicator.swift */,
+				E048B5612965E57F00F257FC /* ErrorTracker.swift */,
 				E09F235929634326002ECF4A /* With.swift */,
 			);
 			path = Ultility;
@@ -565,10 +568,11 @@
 				E0CCAE7F29367E8300DD3D99 /* UIApplication+Extension.swift in Sources */,
 				E0CCAE8129367E8300DD3D99 /* UINavigation+Extension.swift in Sources */,
 				E0CCAE8929367E8300DD3D99 /* Date+Extension.swift in Sources */,
+				E048B5622965E57F00F257FC /* ErrorTracker.swift in Sources */,
 				E0CCAE8729367E8300DD3D99 /* CGFloat+Extension.swift in Sources */,
 				E0CCAE8029367E8300DD3D99 /* UIDevice+Extension.swift in Sources */,
 				E0CCAE8A29367E8300DD3D99 /* Collection+Extension.swift in Sources */,
-				E04A11D729648033002534A7 /* SharedSequence+Ex.swift in Sources */,
+				E048B5602965E55A00F257FC /* ActivityIndicator.swift in Sources */,
 				E0CCAE8429367E8300DD3D99 /* UIViewController+Extension.swift in Sources */,
 				E0F37A1029021E2C00240A50 /* Calculate.swift in Sources */,
 				E0CCAE8529367E8300DD3D99 /* UIStoryBoard+Extension.swift in Sources */,
